@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #ddd6c0;
     color: #501b07;
@@ -7,8 +10,11 @@ body {
     display: flex;
     align-items: center;     
     justify-content: space-between;
-    background-color: #b96e0b;
+    background-color: #ddae87;
     padding: 0 40px; 
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .nav ul {
     display: flex;
@@ -16,7 +22,6 @@ body {
     list-style: none;
     margin: 0;
     padding: 15;
-   
 }
 .nav li a {
      text-decoration: none;
@@ -35,20 +40,20 @@ body {
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #081352;
+    background-color: #db9f6d;
     border-radius: 0px 0px 20px 20px;
     
 }
 .landing-page-content h1 h2 p {
-    color:antiquewhite
+    color:#501b07;
 }
 .landing-title {
-    color: #ffffff;
+    color: #501b07;
 }
 .welcome-phrases {
-    color: #ffffff;
+    color: #501b07;
 }
 .landing-description {
-    color: #ffffff;
+    color: #501b07;
     width: 300px;
 }
