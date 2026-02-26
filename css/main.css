@@ -1,5 +1,5 @@
 body {
-    background-color: #33312b;
+    background-color: #ddd6c0;
     color: #501b07;
     margin: 0px;
 }
@@ -9,7 +9,6 @@ body {
     justify-content: space-between;
     background-color: #b96e0b;
     padding: 0 40px; 
-    border-radius: 0px 0px 20px 20px;
 }
 .nav ul {
     display: flex;
@@ -23,4 +22,33 @@ body {
      text-decoration: none;
      color: #501b07;
      font-size: 20px;
+}
+.landing-page-img img {
+    width: 300px;
+    border-radius: 25px;
+}
+.landing-page {
+    display: flex;
+    align-items: center;     
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #081352;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+.landing-page-content h1 h2 p {
+    color:antiquewhite
+}
+.landing-title {
+    color: #ffffff;
+}
+.welcome-phrases {
+    color: #ffffff;
+}
+.landing-description {
+    color: #ffffff;
+    width: 300px;
 }
