@@ -1,5 +1,26 @@
 body {
-    background-color: #272626;
-    color: white;
+    background-color: #33312b;
+    color: #501b07;
     margin: 0px;
+}
+.header {
+    display: flex;
+    align-items: center;     
+    justify-content: space-between;
+    background-color: #b96e0b;
+    padding: 0 40px; 
+    border-radius: 0px 0px 20px 20px;
+}
+.nav ul {
+    display: flex;
+    gap: 23px;
+    list-style: none;
+    margin: 0;
+    padding: 15;
+   
+}
+.nav li a {
+     text-decoration: none;
+     color: #501b07;
+     font-size: 20px;
 }
