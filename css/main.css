@@ -58,9 +58,14 @@ body {
 }
 .landing-description {
     color: #501b07;
-    width: 300px;
+    line-height: 1.6;
+    width: 500px;
+    font-size: 18px;
 }
 .landing-content {
     padding: 20px;
     padding-top: 10px;
+    display: flex;
+    align-items: center;     
 }
+
