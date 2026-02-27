@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: #ddd6c0;
+    background: linear-gradient(to right, #d48651, #b1590c);
     color: #501b07;
     margin: 0px;
 }
@@ -10,11 +10,9 @@ body {
     display: flex;
     align-items: center;     
     justify-content: space-between;
-    background-color: #ddae87;
+    background: linear-gradient(to right, #ddbca6, #8b5f38);
     padding: 0 40px; 
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
 .nav ul {
     display: flex;
@@ -40,12 +38,9 @@ body {
     padding-right: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #db9f6d;
+    background: linear-gradient(to right, #ddbca6, #8b5f38);
     border-radius: 0px 0px 20px 20px;
     
-}
-.landing-page-content h1 h2 p {
-    color:#501b07;
 }
 .landing-title {
     color: #501b07;
@@ -56,4 +51,8 @@ body {
 .landing-description {
     color: #501b07;
     width: 300px;
+}
+.landing-content {
+    padding: 20px;
+    padding-top: 10px;
 }
