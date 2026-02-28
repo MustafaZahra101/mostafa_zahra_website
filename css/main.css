@@ -44,9 +44,14 @@ body {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: linear-gradient(to right, #ddbca6, #8b5f38);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../assets/imgs/upscalemedia-transformed.png');
+    background-size: cover; /* لضمان تغطية الصورة للشاشة بالكامل */
+    background-position: center; /* لتوسط الصورة */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
+    background-attachment: fixed; /* لتأثير تمرير عصري */
+    color: #ffffff; /* تغيير لون النص إلى الأبيض ليتناسب مع الخلفية */
     border-radius: 0px 0px 20px 20px;
     
 }
