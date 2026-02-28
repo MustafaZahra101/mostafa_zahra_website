@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(to right, #8b5f38 , #ddbca6);
+    background: linear-gradient(to right, #b6b57f, #000000);
     color: #501b07;
     margin: 0px;
 }
@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;     
     justify-content: space-between;
-    background: linear-gradient(to right, #ddbca6, #8b5f38);
+    background: linear-gradient(to right, #000000, #b6b57f);
     padding: 0 40px; 
     
 }
