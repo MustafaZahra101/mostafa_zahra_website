@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background: linear-gradient(to right, #8b5f38 , #ddbca6);
+    background: linear-gradient(to right, #b6b57f, #000000);
     color: #501b07;
     margin: 0px;
 }
@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;     
     justify-content: space-between;
-    background: linear-gradient(to right, #ddbca6, #8b5f38);
+    background: linear-gradient(to right, #000000, #b6b57f);
     padding: 0 40px; 
     
 }
@@ -27,7 +27,7 @@ body {
      font-size: 20px;
 }
 .landing-page-img img {
-    width: 300px;
+    width: 400px;
     border-radius: 25px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
@@ -44,9 +44,14 @@ body {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: linear-gradient(to right, #ddbca6, #8b5f38);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../assets/imgs/12.png');
+    background-size: cover; /* لضمان تغطية الصورة للشاشة بالكامل */
+    background-position: center; /* لتوسط الصورة */
+    background-repeat: no-repeat; /* لمنع تكرار الصورة */
+    background-attachment: fixed; /* لتأثير تمرير عصري */
+    color: #ffffff; /* تغيير لون النص إلى الأبيض ليتناسب مع الخلفية */
     border-radius: 0px 0px 20px 20px;
     
 }
@@ -57,10 +62,10 @@ body {
     color: #501b07;
 }
 .landing-description {
-    color: #501b07;
+    color: #d6a316;
     line-height: 1.6;
     width: 500px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .landing-content {
     padding: 20px;
