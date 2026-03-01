@@ -62,17 +62,10 @@ body {
     color: #501b07;
 }
 .landing-description {
-    color: #1633d6;
+    color: #d6c316;
     line-height: 1.6;
     width: 550px;
     font-size: 30px;
-    font-family: "Vibes", system-ui;
-    text-shadow: 
-    0 0 10px rgba(255, 78, 0, 0.8),  /* توهج داخلي حاد */
-    0 0 20px rgba(255, 78, 0, 0.5),  /* توهج متوسط */
-    0 0 40px rgba(255, 78, 0, 0.3),  /* انتشار الضوء على الخلفية */
-    0 0 70px rgba(255, 78, 0, 0.2);  /* انعكاس المدى البعيد */
-    mix-blend-mode: screen;
 }
 .landing-content {
     padding: 20px;
