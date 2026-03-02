@@ -1,11 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
     initThemeToggle();
+    initLangToggle();
     initNavbar();
     initMobileMenu();
     initScrollReveal();
     initSmoothScroll();
     initFormHandling();
 });
+
+function initLangToggle() {
+    const toggle = document.querySelector('.lang-toggle');
+    if (!toggle) return;
+    
+    const savedLang = localStorage.getItem('lang') || 'en';
+    setLanguage(savedLang);
+    
+    toggle.addEventListener('click', () => {
+        const currentLang = toggle.getAttribute('data-lang');
+        const newLang = currentLang === 'en' ? 'ar' : 'en';
+        setLanguage(newLang);
+    });
+}
+
+function setLanguage(lang) {
+    const toggle = document.querySelector('.lang-toggle');
+    if (!toggle) return;
+    
+    toggle.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    localStorage.setItem('lang', lang);
+}
 
 function initThemeToggle() {
     const toggle = document.querySelector('.theme-toggle');

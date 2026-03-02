@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap');
 
+@font-face {
+    font-family: 'Vibes';
+    src: url('assets/fonts/Vibes.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Zaatar';
+    src: url('assets/fonts/Zaatar-Black.otf') format('opentype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Palestine';
+    src: url('assets/fonts/Palestine-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Rubbama';
+    src: url('assets/fonts/KORubbama-Black.otf') format('opentype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'Momken';
+    src: url('assets/fonts/KoMomken-Regular.otf') format('opentype');
+}
+
+
 :root {
     --bg-primary: #0a0908;
     --bg-secondary: #141210;
@@ -163,6 +187,92 @@ button {
 [data-theme="light"] .theme-toggle .moon {
     opacity: 0;
     transform: rotate(90deg) scale(0.5);
+}
+
+.lang-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 5.5rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem 0.6rem 1.25rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.lang-toggle:hover {
+    transform: scale(1.05);
+    border-color: var(--border-hover);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.lang-toggle .lang-en {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+}
+
+.lang-toggle .lang-ar {
+    font-family: 'Palestine', 'Momken', sans-serif;
+    font-size: 1rem;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.lang-toggle .lang-divider {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    opacity: 0.4;
+    margin: 0 0.15rem;
+}
+
+.lang-toggle[data-lang="ar"] .lang-en {
+    color: var(--text-muted);
+}
+
+.lang-toggle[data-lang="en"] .lang-ar {
+    color: var(--accent);
+}
+
+.lang-toggle .lang-indicator {
+    position: absolute;
+    width: 42px;
+    height: 34px;
+    left: 4px;
+    background: var(--accent-glow);
+    border-radius: 2rem;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: -1;
+}
+
+.lang-toggle[data-lang="ar"] .lang-indicator {
+    transform: translateX(52px);
+}
+
+[lang="ar"] body,
+[lang="ar"] .arabic-text {
+    font-family: 'Palestine', 'Momken', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+[lang="ar"] .arabic-display {
+    font-family: 'Vibes', 'Zaatar', 'Rubbama', sans-serif;
+}
+
+[lang="ar"] .arabic-heading {
+    font-family: 'Zaatar', 'Rubbama', sans-serif;
+    font-weight: 900;
 }
 
 /* Navigation */
