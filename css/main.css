@@ -1258,6 +1258,12 @@ section {
         height: 48px;
         font-size: 1.1rem;
     }
+    
+    .lang-toggle {
+        bottom: 1.5rem;
+        right: 5rem;
+        padding: 0.5rem 0.75rem 0.5rem 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1277,5 +1283,20 @@ section {
     
     .contact-form {
         padding: 1.5rem;
+    }
+    
+    .lang-toggle {
+        bottom: 1.5rem;
+        right: 4.5rem;
+        padding: 0.45rem 0.6rem 0.45rem 0.85rem;
+    }
+    
+    .lang-toggle .lang-indicator {
+        width: 36px;
+        height: 28px;
+    }
+    
+    .lang-toggle[data-lang="ar"] .lang-indicator {
+        transform: translateX(44px);
     }
 }
