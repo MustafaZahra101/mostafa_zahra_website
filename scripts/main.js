@@ -52,8 +52,13 @@ window.addEventListener('scroll', () => {
 
 navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-    navToggle.querySelector('i').classList.toggle('fa-bars');
-    navToggle.querySelector('i').classList.toggle('fa-times');
+    navToggle.classList.toggle('active');
+    
+    if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = '';
+    }
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -68,8 +73,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
             
             navLinks.classList.remove('active');
-            navToggle.querySelector('i').classList.add('fa-bars');
-            navToggle.querySelector('i').classList.remove('fa-times');
+            navToggle.classList.remove('active');
+            document.body.style.overflow = '';
         }
     });
 });
@@ -93,8 +98,8 @@ function handleSwipe() {
     if (Math.abs(diff) > swipeThreshold) {
         if (diff > 0 && navLinks.classList.contains('active')) {
             navLinks.classList.remove('active');
-            navToggle.querySelector('i').classList.add('fa-bars');
-            navToggle.querySelector('i').classList.remove('fa-times');
+            navToggle.classList.remove('active');
+            document.body.style.overflow = '';
         }
     }
 }
@@ -143,6 +148,18 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-card, .portfolio-item, .project-card, .contact-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
-    el.style.transition = 'all 0.6s ease';
+    el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
     observer.observe(el);
+});
+
+const headerObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.section-header').forEach(header => {
+    headerObserver.observe(header);
 });
