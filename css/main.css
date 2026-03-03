@@ -12,7 +12,6 @@
     --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.2);
     --transition: all 0.3s ease;
     --font-display: 'Vibes', serif;
-    --font-accent: 'Ballet', serif;
 }
 
 * {
@@ -50,7 +49,7 @@ body {
 }
 
 .nav-brand .brand-text {
-    font-family: var(--font-accent);
+    font-family: var(--font-display);
     font-size: 2.5rem;
     background: var(--gradient-gold);
     -webkit-background-clip: text;
@@ -134,7 +133,7 @@ body {
 }
 
 .hero-title {
-    font-family: var(--font-accent);
+    font-family: var(--font-display);
     font-size: 4.5rem;
     background: var(--gradient-gold);
     -webkit-background-clip: text;
@@ -319,7 +318,7 @@ section {
 }
 
 .section-title {
-    font-family: var(--font-accent);
+    font-family: var(--font-display);
     font-size: 3.5rem;
     color: var(--text-light);
     margin-bottom: 1rem;
