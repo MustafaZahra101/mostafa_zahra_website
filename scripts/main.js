@@ -51,18 +51,9 @@ window.addEventListener('scroll', () => {
 });
 
 navToggle.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    
-    if (navLinks.style.display === 'flex') {
-        navLinks.style.flexDirection = 'column';
-        navLinks.style.position = 'absolute';
-        navLinks.style.top = '100%';
-        navLinks.style.left = '0';
-        navLinks.style.right = '0';
-        navLinks.style.background = 'rgba(10, 10, 10, 0.98)';
-        navLinks.style.padding = '2rem';
-        navLinks.style.borderBottom = '1px solid rgba(182, 181, 127, 0.2)';
-    }
+    navLinks.classList.toggle('active');
+    navToggle.querySelector('i').classList.toggle('fa-bars');
+    navToggle.querySelector('i').classList.toggle('fa-times');
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -76,12 +67,37 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 block: 'start'
             });
             
-            if (window.innerWidth < 768) {
-                navLinks.style.display = 'none';
-            }
+            navLinks.classList.remove('active');
+            navToggle.querySelector('i').classList.add('fa-bars');
+            navToggle.querySelector('i').classList.remove('fa-times');
         }
     });
 });
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, { passive: true });
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0 && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            navToggle.querySelector('i').classList.add('fa-bars');
+            navToggle.querySelector('i').classList.remove('fa-times');
+        }
+    }
+}
 
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 
