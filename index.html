@@ -3,107 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostafa Zahra | Programmer & Designer</title>
-    <link href="css/main.css" rel="stylesheet">
+    <title>Mostafa Zahra | Programmer & Designer & More</title>
+    <meta name="description" content="Portfolio of Mostafa Zahra - Programmer, Designer, Artist, Philosopher">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Badeen+Display&family=Ballet:opsz@16..72&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
-        <div class="nav-brand">
-            <span class="brand-text">MZ</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-            <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-        <div class="nav-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="container">
+            <div class="nav-inner">
+                <a href="#home" class="nav-brand">M<span>Z</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
+    <button class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon moon"></i>
+        <i class="fas fa-sun sun"></i>
+    </button>
+
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="greeting">Hello, I'm</p>
-                <h1 class="hero-title">Mostafa Zahra</h1>
-                <div class="typing-container">
-                    <span class="typed-text"></span>
-                    <span class="cursor">|</span>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-label">Hello, I'm</p>
+                    <h1 class="hero-title">Mostafa <em>Zahra</em></h1>
+                    <p class="hero-subtitle">
+                        A multidisciplinary creator exploring the intersection of technology, art, and human thought. I build things that matter.
+                    </p>
+                    <div class="hero-roles">
+                        <span class="role-tag">Programmer</span>
+                        <span class="role-tag">Designer</span>
+                        <span class="role-tag">Artist</span>
+                        <span class="role-tag">Philosopher</span>
+                        <span class="role-tag">Historian</span>
+                        <span class="role-tag">Poet</span>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary">
+                            View Work <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            Get In Touch
+                        </a>
+                    </div>
                 </div>
-                <p class="hero-description">
-                    Programmer • Designer • Artist • Philosopher • Historian • Leader • Poet • Novelist
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="assets/imgs/othe-imgs/personal.webp" alt="Mostafa Zahra">
-                    <div class="image-border"></div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/imgs/othe-imgs/personal.webp" alt="Mostafa Zahra">
+                    </div>
+                    <div class="hero-decoration"></div>
                 </div>
             </div>
         </div>
-        <div class="scroll-down">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
+        <div class="scroll-indicator">
+            <span></span>
+            Scroll
         </div>
     </section>
 
     <section id="about" class="about">
-        <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Get to know me better</p>
-        </div>
-        <div class="about-content">
-            <div class="about-image">
-                <img src="assets/imgs/othe-imgs/1765475567070 (2).webp" alt="About Mostafa">
-            </div>
-            <div class="about-text">
-                <h3>Who I Am</h3>
-                <p>
-                    I'm a passionate individual with diverse interests spanning technology, art, and humanities. 
-                    I believe in the power of creativity combined with logic to solve complex problems. 
-                    My journey includes programming, design, writing, and exploring philosophical concepts.
-                </p>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fas fa-code"></i>
-                        <h4>Programming</h4>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <div class="about-image">
+                        <img src="assets/imgs/othe-imgs/1765475567070 (2).webp" alt="About Mostafa">
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-palette"></i>
-                        <h4>Design</h4>
+                    <div class="about-image-accent"></div>
+                </div>
+                <div class="about-content">
+                    <div class="section-header">
+                        <p class="section-label">About</p>
+                        <h2 class="section-title">Who I <em>Am</em></h2>
                     </div>
-                    <div class="skill-card">
-                        <i class="fas fa-pen-nib"></i>
-                        <h4>Writing</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-landmark"></i>
-                        <h4>History</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-brain"></i>
-                        <h4>Philosophy</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-book-open"></i>
-                        <h4>Literature</h4>
+                    <h3>A Journey Through Disciplines</h3>
+                    <p>
+                        I'm a passionate seeker of knowledge across many domains. My journey has led me through the worlds of programming and design, while always maintaining a deep connection to the humanities—philosophy, history, literature, and poetry.
+                    </p>
+                    <p>
+                        I believe that the most meaningful work emerges at the intersection of seemingly disparate fields. Whether crafting elegant code or contemplating ancient wisdom, I bring the same dedication to excellence and attention to detail.
+                    </p>
+                    <div class="skills-list">
+                        <span class="skill-item">Programming</span>
+                        <span class="skill-item">UI/UX Design</span>
+                        <span class="skill-item">Web Development</span>
+                        <span class="skill-item">Philosophy</span>
+                        <span class="skill-item">History</span>
+                        <span class="skill-item">Creative Writing</span>
+                        <span class="skill-item">Digital Art</span>
+                        <span class="skill-item">Poetry</span>
                     </div>
                 </div>
             </div>
@@ -111,149 +122,178 @@
     </section>
 
     <section id="portfolio" class="portfolio">
-        <div class="section-header">
-            <h2 class="section-title">Portfolio</h2>
-            <p class="section-subtitle">My creative collection</p>
-        </div>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="assets/imgs/othe-imgs/11.jpg" alt="Portfolio Item 1">
-                <div class="portfolio-overlay">
-                    <h4>Artwork One</h4>
-                    <p>Digital Art</p>
-                </div>
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Portfolio</p>
+                <h2 class="section-title">Selected <em>Works</em></h2>
+                <p class="section-desc">A collection of creative projects spanning digital art, design, and visual storytelling.</p>
             </div>
-            <div class="portfolio-item">
-                <img src="assets/imgs/othe-imgs/12.webp" alt="Portfolio Item 2">
-                <div class="portfolio-overlay">
-                    <h4>Artwork Two</h4>
-                    <p>Digital Art</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/othe-imgs/11.jpg" alt="Artwork">
+                    <div class="portfolio-overlay">
+                        <h4>Digital Composition</h4>
+                        <p>Digital Art</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/imgs/othe-imgs/13.png" alt="Portfolio Item 3">
-                <div class="portfolio-overlay">
-                    <h4>Artwork Three</h4>
-                    <p>Digital Art</p>
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/othe-imgs/12.webp" alt="Artwork">
+                    <div class="portfolio-overlay">
+                        <h4>Visual Study</h4>
+                        <p>Digital Art</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/imgs/othe-imgs/6.jpg" alt="Portfolio Item 4">
-                <div class="portfolio-overlay">
-                    <h4>Artwork Four</h4>
-                    <p>Digital Art</p>
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/othe-imgs/13.png" alt="Artwork">
+                    <div class="portfolio-overlay">
+                        <h4>Creative Piece</h4>
+                        <p>Design</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/imgs/othe-imgs/92 - LW7jvGb - S04E14 - Card Wars.png" alt="Portfolio Item 5">
-                <div class="portfolio-overlay">
-                    <h4>Card Wars</h4>
-                    <p>Animation</p>
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/othe-imgs/6.jpg" alt="Artwork">
+                    <div class="portfolio-overlay">
+                        <h4>Artwork</h4>
+                        <p>Photography</p>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/imgs/over-the-garden-wall-imgs/over+the+garden+wall+3.webp" alt="Portfolio Item 6">
-                <div class="portfolio-overlay">
-                    <h4>Over the Garden Wall</h4>
-                    <p>Fan Art</p>
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/othe-imgs/92 - LW7jvGb - S04E14 - Card Wars.png" alt="Card Wars">
+                    <div class="portfolio-overlay">
+                        <h4>Card Wars</h4>
+                        <p>Animation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal">
+                    <img src="assets/imgs/over-the-garden-wall-imgs/over+the+garden+wall+3.webp" alt="Over the Garden Wall">
+                    <div class="portfolio-overlay">
+                        <h4>Over the Garden Wall</h4>
+                        <p>Fan Art</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <div class="section-header">
-            <h2 class="section-title">Projects</h2>
-            <p class="section-subtitle">Technical work & experiments</p>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-cloud"></i>
-                </div>
-                <h3>Cloudflare Workers</h3>
-                <p>Serverless applications and edge computing projects</p>
-                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Projects</p>
+                <h2 class="section-title">Technical <em>Work</em></h2>
+                <p class="section-desc">Building tools, experiments, and applications across the modern web ecosystem.</p>
             </div>
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-globe"></i>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <span class="project-number">01</span>
+                    <div class="project-card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloudflare Workers</h3>
+                    <p>Serverless applications and edge computing projects deployed globally for optimal performance.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <h3>Web Development</h3>
-                <p>Modern websites and web applications</p>
-                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-mobile-alt"></i>
+                <div class="project-card reveal reveal-delay-1">
+                    <span class="project-number">02</span>
+                    <div class="project-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern websites and web applications built with contemporary tools and best practices.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <h3>UI/UX Design</h3>
-                <p>User-centered design solutions</p>
-                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="project-card">
-                <div class="project-icon">
-                    <i class="fas fa-robot"></i>
+                <div class="project-card reveal reveal-delay-2">
+                    <span class="project-number">03</span>
+                    <div class="project-card-icon">
+                        <i class="fas fa-pen-ruler"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design solutions crafted with intention, care, and attention to detail.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <h3>Automation</h3>
-                <p>Scripts and tools for efficiency</p>
-                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                <div class="project-card reveal reveal-delay-3">
+                    <span class="project-number">04</span>
+                    <div class="project-card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automation</h3>
+                    <p>Scripts and tools that streamline workflows and boost productivity efficiently.</p>
+                    <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Let's connect and create something amazing</p>
-        </div>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>Email</h4>
-                        <p>mostafa@example.com</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <div>
-                        <h4>Location</h4>
-                        <p>Egypt</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Phone</h4>
-                        <p>+20 123 456 7890</p>
-                    </div>
-                </div>
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-label">Contact</p>
+                <h2 class="section-title">Let's <em>Connect</em></h2>
+                <p class="section-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
             </div>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+            <div class="contact-grid">
+                <div class="contact-info-list">
+                    <div class="contact-item reveal">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>mostafa@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Egypt</p>
+                        </div>
+                    </div>
+                    <div class="contact-item reveal">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+20 123 456 7890</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+                <form class="contact-form reveal">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project..." autocomplete="off" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 Mostafa Zahra. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">MZ</span>
+                <p class="footer-text">&copy; 2026 Mostafa Zahra. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </footer>
