@@ -25,8 +25,8 @@
 
 
 :root {
-    --bg-primary: #0a0908;
-    --bg-secondary: #141210;
+    --bg-primary: #0a090894;
+    --bg-secondary: #1b1b1a;
     --bg-tertiary: #1c1917;
     --text-primary: #f0ebe3;
     --text-secondary: #a69f94;
@@ -48,7 +48,7 @@
 }
 
 [data-theme="light"] {
-    --bg-primary: #e2d6be;
+    --bg-primary: #e2d6bec9;
     --bg-secondary: #96815f;
     --bg-tertiary: #e2d6be;
     --text-primary: #1a1815;
