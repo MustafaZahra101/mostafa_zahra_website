@@ -25,8 +25,8 @@
 
 
 :root {
-    --bg-primary: #0a0908;
-    --bg-secondary: #141210;
+    --bg-primary: #35240494;
+    --bg-secondary: #1b1b1a;
     --bg-tertiary: #1c1917;
     --text-primary: #f0ebe3;
     --text-secondary: #a69f94;
@@ -48,12 +48,12 @@
 }
 
 [data-theme="light"] {
-    --bg-primary: #f5f3ef;
-    --bg-secondary: #ebe7e0;
-    --bg-tertiary: #e0dcd4;
+    --bg-primary: #e2d6bec9;
+    --bg-secondary: #96815f;
+    --bg-tertiary: #e2d6be;
     --text-primary: #1a1815;
     --text-secondary: #5a554d;
-    --text-muted: #8a847a;
+    --text-muted: #6d6658;
     --accent: #a68b4b;
     --accent-dim: #8a7642;
     --accent-glow: rgba(166, 139, 75, 0.12);
@@ -301,12 +301,7 @@ button {
 }
 
 .nav-brand {
-    font-family: var(--font-display);
-    font-size: 1.75rem;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: var(--accent);
-    transition: color 0.3s ease;
+    width: 90px;
 }
 
 .nav-brand span {
