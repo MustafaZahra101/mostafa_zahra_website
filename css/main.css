@@ -48,12 +48,12 @@
 }
 
 [data-theme="light"] {
-    --bg-primary: #f5f3ef;
-    --bg-secondary: #ebe7e0;
-    --bg-tertiary: #e0dcd4;
+    --bg-primary: #e2d6be;
+    --bg-secondary: #96815f;
+    --bg-tertiary: #e2d6be;
     --text-primary: #1a1815;
     --text-secondary: #5a554d;
-    --text-muted: #8a847a;
+    --text-muted: #6d6658;
     --accent: #a68b4b;
     --accent-dim: #8a7642;
     --accent-glow: rgba(166, 139, 75, 0.12);
