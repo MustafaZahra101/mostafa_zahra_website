@@ -189,92 +189,6 @@ button {
     transform: rotate(90deg) scale(0.5);
 }
 
-.lang-toggle {
-    position: fixed;
-    bottom: 2rem;
-    right: 5.5rem;
-    z-index: 1001;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1rem 0.6rem 1.25rem;
-    background: var(--bg-tertiary);
-    border: 1px solid var(--border);
-    border-radius: 2.5rem;
-    cursor: pointer;
-    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.lang-toggle:hover {
-    transform: scale(1.05);
-    border-color: var(--border-hover);
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-}
-
-.lang-toggle .lang-en {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    color: var(--text-primary);
-    transition: color 0.3s ease;
-}
-
-.lang-toggle .lang-ar {
-    font-family: 'Palestine', 'Momken', sans-serif;
-    font-size: 1rem;
-    color: var(--text-muted);
-    transition: color 0.3s ease;
-}
-
-.lang-toggle .lang-divider {
-    font-size: 0.65rem;
-    color: var(--text-muted);
-    opacity: 0.4;
-    margin: 0 0.15rem;
-}
-
-.lang-toggle[data-lang="ar"] .lang-en {
-    color: var(--text-muted);
-}
-
-.lang-toggle[data-lang="en"] .lang-ar {
-    color: var(--accent);
-}
-
-.lang-toggle .lang-indicator {
-    position: absolute;
-    width: 42px;
-    height: 34px;
-    left: 4px;
-    background: var(--accent-glow);
-    border-radius: 2rem;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: -1;
-}
-
-.lang-toggle[data-lang="ar"] .lang-indicator {
-    transform: translateX(52px);
-}
-
-[lang="ar"] body,
-[lang="ar"] .arabic-text {
-    font-family: 'Palestine', 'Momken', sans-serif;
-    direction: rtl;
-    text-align: right;
-}
-
-[lang="ar"] .arabic-display {
-    font-family: 'Vibes', 'Zaatar', 'Rubbama', sans-serif;
-}
-
-[lang="ar"] .arabic-heading {
-    font-family: 'Zaatar', 'Rubbama', sans-serif;
-    font-weight: 900;
-}
-
 /* Navigation */
 .navbar {
     position: fixed;
@@ -1253,45 +1167,37 @@ section {
         height: 48px;
         font-size: 1.1rem;
     }
-    
-    .lang-toggle {
-        bottom: 1.5rem;
-        right: 5rem;
-        padding: 0.5rem 0.75rem 0.5rem 1rem;
-    }
 }
-
 @media (max-width: 480px) {
+    .hero-title {
+        font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-roles {
+        font-size: 0.8rem;
+    }
+
     .hero-cta {
-        flex-direction: column;
-        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .hero-visual {
+        max-width: 300px;
     }
     
-    .btn {
-        width: 100%;
-        justify-content: center;
+    .about-grid {
+        gap: 2rem;
+    }
+
+    .about-image-wrapper {
+        max-width: 250px;
     }
     
-    .skill-item {
-        font-size: 0.75rem;
-    }
-    
-    .contact-form {
-        padding: 1.5rem;
-    }
-    
-    .lang-toggle {
-        bottom: 1.5rem;
-        right: 4.5rem;
-        padding: 0.45rem 0.6rem 0.45rem 0.85rem;
-    }
-    
-    .lang-toggle .lang-indicator {
-        width: 36px;
-        height: 28px;
-    }
-    
-    .lang-toggle[data-lang="ar"] .lang-indicator {
-        transform: translateX(44px);
+    .contact-grid {
+        gap: 2rem;
     }
 }
