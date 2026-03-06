@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Hero Banner -->
-<img src="upscalemedia-transformed.png" width="200" style="border-radius: 50%; border: 3px solid #2d6a4f;" alt="Mustafa Zahra"/>
+<img src="assets/imgs/othe-imgs/upscalemedia-transformed.png" width="200" style="border-radius: 50%; border: 3px solid #2d6a4f;" alt="Mustafa Zahra"/>
 
 # مصطفى زهرا — Mustafa Zahra
 
@@ -54,8 +54,8 @@ Python · C · C++ · C# · Rust · Java · JavaScript · HTML · CSS · SQL · 
 ## 🎨 الفن الرقمي والإبداع — Digital Art & Creative Work
 
 <div align="center">
-<img src="13.png" width="45%" alt="Game Art - Cave Scene"/>
-<img src="12.png" width="45%" alt="Game Art - Room Scene"/>
+<img src="assets/imgs/othe-imgs/13.png" width="45%" alt="Game Art - Cave Scene"/>
+<img src="assets/imgs/othe-imgs/imageye___-_imgi_68_8c29c377a7be4c9464c2844a9e1a1b8a.png" width="45%" alt="Game Art - Room Scene"/>
 </div>
 
 <br/>
@@ -106,8 +106,8 @@ Python · C · C++ · C# · Rust · Java · JavaScript · HTML · CSS · SQL · 
 ## 🎮 الإلهام البصري — Visual Inspirations
 
 <div align="center">
-<img src="imageye___-_imgi_52_bfdacd9126d8d1136acc543920eca3b4.png" width="45%" alt="Game Scene - Bird Creature"/>
-<img src="1765475567070__2_.png" width="45%" alt="Game Scene - Puzzle"/>
+<img src="assets/imgs/othe-imgs/imageye___-_imgi_52_bfdacd9126d8d1136acc543920eca3b4.png" width="45%" alt="Game Scene - Bird Creature"/>
+<img src="assets/imgs/othe-imgs/1765475567070 (2).png" width="45%" alt="Game Scene - Puzzle"/>
 </div>
 
 <br/>
@@ -148,20 +148,6 @@ Python · C · C++ · C# · Rust · Java · JavaScript · HTML · CSS · SQL · 
 🎭 السينما والأنيميشن         Cinema & Animation
 ```
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=MustafaZahra101&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=2d6a4f&icon_color=2d6a4f)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=MustafaZahra101&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=2d6a4f)
-
-</div>
-
----
-
 ## 🤝 تواصل — Connect
 
 <div align="center">
@@ -174,7 +160,7 @@ Python · C · C++ · C# · Rust · Java · JavaScript · HTML · CSS · SQL · 
 
 <div align="center">
 
-<img src="92_-_LW7jvGb_-_S04E14_-_Card_Wars.png" width="60%" alt="Adventure Time - Card Wars"/>
+<img src="assets/imgs/othe-imgs/92 - LW7jvGb - S04E14 - Card Wars.png" width="60%" alt="Adventure Time - Card Wars"/>
 
 <br/><br/>
 
